@@ -1,7 +1,7 @@
 name: SkelenWhitelist
-version: '1.19'
+version: '1.23'
 main: skelen.skelenWhitelist.SkelenWhitelist
-api-version: '1.20'
+api-version: '1.21'
 prefix: SkelenWhitelist
 authors: [LordSkelen18]
 description: Custom plugin for adding multiple players to whitelist.
