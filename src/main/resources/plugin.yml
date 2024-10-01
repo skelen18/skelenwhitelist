@@ -1,0 +1,44 @@
+name: SkelenWhitelist
+version: '1.19'
+main: skelen.skelenWhitelist.SkelenWhitelist
+api-version: '1.20'
+prefix: SkelenWhitelist
+authors: [LordSkelen18]
+description: Custom plugin for adding multiple players to whitelist.
+commands:
+  skelenwl:
+    description: Main command for the SkelenWhitelist plugin.
+    usage: /<command> <subcommand>
+    permission: skelenwhitelist.use
+    permission-message: You do not have permission to use this command.
+    children:
+      all:
+        description: Adds all players on the whitelist to the server whitelist.
+        usage: /<command> all
+        permission: skelenwhitelist.add
+        permission-message: You do not have permission to add players to the whitelist.
+      list:
+        description: Lists all players on the whitelist.
+        usage: /<command> list
+        permission: skelenwhitelist.list
+        permission-message: You do not have permission to view the whitelist.
+      removeall:
+        description: Removes all players from the whitelist.
+        usage: /<command> removeall
+        permission: skelenwhitelist.remove
+        permission-message: You do not have permission to remove players from the whitelist.
+      load:
+        description: Reloads the whitelist from the config.yml file.
+        usage: /<command> load
+        permission: skelenwhitelist.load
+        permission-message: You do not have permission to reload the whitelist.
+      add:
+        description: Adds a player to the whitelist.
+        usage: /<command> add <player>
+        permission: skelenwhitelist.add
+        permission-message: You do not have permission to add players to the whitelist.
+      remove:
+        description: Removes a player from the whitelist.
+        usage: /<command> remove <player>
+        permission: skelenwhitelist.remove
+        permission-message: You do not have permission to remove players from the whitelist.
